@@ -1,18 +1,25 @@
-package com.simple.example; // optional 
-import java.util.Scanner; // use for user input like scanf function in c programming
+package com;  //Is optional.
+import java.util.Scanner;   //Scanner is use for Give input as end user.
 
+public class first
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // Use make scanner object.
 
-public class print {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+    /* ---------------------STRING------------------------*/
+    System.out.println("Hello world");    //No user define
+    System.out.println("Enter String");
+    String First = scan.nextLine();  // Initialized the String.
+    System.out.println(First);
 
-        //printing elements without using user input`s.
-        System.out.println("Hello World ");
-
-        //printing elements with user input`s.
-        String Print_string;
-        System.out.println("Enter name");
-        Print_string = sc.next();
-        System.out.println(Print_string);
-    }
+    /* ---------------------INT------------------------*/
+    System.out.println(10+10);    //No user define function
+    System.out.println("Enter First digit");
+    int first = scan.nextInt();  // Initialized the First digit.
+    System.out.println("Enter Second digit");
+    int second = scan.nextInt();  // Initialized the Second digit.
+    int ans = first + second;
+    System.out.println(ans);
+  }
 }
